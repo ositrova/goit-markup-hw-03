@@ -226,7 +226,8 @@ img {
 }
 
 .footer-logo {
-  margin-bottom: 20px;
+  margin-bottom: 20px; 
+  /* сделать блочнім  и в хедере и футере*/
 }
 .footer-logo-part {
   color: var(--second-txt-cl);
