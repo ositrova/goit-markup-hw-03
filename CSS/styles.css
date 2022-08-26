@@ -15,8 +15,12 @@
   --accent-bg-cl: #2f303a;
   --bg-cl: #f5f5f5;
   --second-bg-cl: #f5f4fa;
+  --cl-box: #EEEEEE;
 
   /* Others */
+  --items-3: 3;
+  --items-4: 4;
+  --indent: 30px;
 }
 
 /* reset */
@@ -61,14 +65,38 @@ img {
   color: var(--main-txt-cl);
   background: var(--second-txt-cl);
 }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 
 /*Header*/
 .header {
   background: var(--second-txt-cl);
   color: currentColor;
+  border: 1px solid #ECECEC;
+  
 }
-/*.navigation {
-}*/
+.header-container {
+  display: flex;
+  align-items: center;
+}
+.navigation {
+margin-right: auto;
+}
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
 
 .logo {
   font-family: var(--secondary-font);
@@ -77,6 +105,7 @@ img {
   line-height: calc(31 / 26);
   text-decoration: none;
   color: var(--black-txt-cl);
+  margin-right: 93px;
 }
 
 .logo-part {
@@ -88,6 +117,13 @@ img {
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
   color: var(--main-txt-cl);
+
+}
+
+.header-link{
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .nav-contact {
@@ -113,6 +149,12 @@ img {
   background-color: var(--accent-bg-cl);
 }
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  align-items: center;
+}
+
 .hero-title {
   font-weight: 900;
   font-size: 44px;
@@ -120,7 +162,6 @@ img {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-
   color: var(--second-txt-cl);
 }
 
@@ -136,11 +177,20 @@ img {
   letter-spacing: 0.06em;
   color: var(--second-txt-cl);
   background-color: var(--accent-txt-cl);
+  padding: 6px 22px;
+  margin-left: auto;
+  margin-right: auto;
+  
 }
 
 /*Section 2 (особливості)*/
-/* .feature {
-} */
+.feature {
+  padding-bottom: 0;
+}
+
+.feature-list{
+  display: flex;
+}
 
 /*.feature-headline {
 }
@@ -157,7 +207,6 @@ img {
 }
 
 .feature-text {
-  width: 270px;
   line-height: calc(24 / 14);
   color: var(--light-txt-cl);
 }
@@ -167,23 +216,34 @@ img {
 /*.outer {
 }*/
 
+.outer-list {
+  display: flex;
+  gap: 30px;
+}
+
 .outer-title {
-  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: calc(42 / 36);
   text-align: center;
   color: var(--main-txt-cl);
+  padding-bottom: 50px;
 }
 
 .outer-item {
-  width: 370px;
+ flex-basis: calc((100% - var(--indent) * (var(--items-3) - 1)) / var(--items-3));
 }
 
 /*Команда*/
 
 .team {
   background: var(--second-bg-cl);
+}
+
+.team-list{
+  display: flex;
+  gap: 30px
+
 }
 
 .team-title {
@@ -196,12 +256,17 @@ img {
 }
 
 .team-item {
-  width: 270px;
   background-color: var(--second-txt-cl);
+  flex-basis: calc((100% - var(var(--items-4))* (var(--items) - 1)) / var(--items));
 }
 
 /*.team-img {
 }*/
+.team-box{
+box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px;
+padding: 30px 0;
+}
 
 .team-name {
   margin-bottom: 10px;
@@ -223,11 +288,13 @@ img {
 
 .footer {
   background-color: var(--accent-bg-cl);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .footer-logo {
-  margin-bottom: 20px; 
-  /* сделать блочнім  и в хедере и футере*/
+  display: block;
+  margin-bottom: 20px;
 }
 .footer-logo-part {
   color: var(--second-txt-cl);
@@ -249,6 +316,17 @@ img {
 }
 
 /*Partfolio*/
+.partfolio-filtr {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.partfolio-filtr-item {
+  margin-bottom: 50px;
+  
+  
+}
 
 .partfolio-btn {
   font-family: inherit;
@@ -267,12 +345,23 @@ img {
   color: var(--second-txt-cl);
   background: var(--accent-txt-cl);
 }
-/*.partfolio-work {
+
+.partfolio-card-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.partfolio-work {
+   flex-basis: calc((100%-var(--indent)*(var(--items)-1))/var(--items));
 }
 
-.partfolio-work-img {
-}*/
-
+ /* .partfolio-work-img { 
+} */
+.partfolio-box {
+border: 1px solid var(--cl-box);
+border-top: 0;
+padding: 20px 0;
+}
 .partfolio-work-item {
   margin-bottom: 4px;
   font-weight: 700;

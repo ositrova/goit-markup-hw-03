@@ -26,96 +26,140 @@
   <body class="page">
     <!--Header (верхня лінія)-->
     <header class="header">
-      <div class="container">
-      <nav class="navigation">
-        <a class="logo" href="./index.html" lang="en"><span class="logo-part">Web</span>Studio</a>
-        <ul class="list">
-          <li class="nav-item"><a class="link" href="./index.html">Студія</a></li>
-          <li class="nav-item"><a class="link current" href="./partfolio.html">Портфоліо</a></li>
-          <li class="nav-item"><a class="link" href="#">Контакти</a></li>
-        </ul>
-      </nav>
+      <div class="container header-container">
+        <a class="logo header-link" href="./index.html" lang="en"
+          ><span class="logo-part">Web</span>Studio</a
+        >
+        <nav class="navigation">
+          <ul class="list nav-list">
+            <li class="nav-item"><a class="link header-link" href="./index.html">Студія</a></li>
+            <li class="nav-item">
+              <a class="link header-link current" href="./partfolio.html">Портфоліо</a>
+            </li>
+            <li class="nav-item"><a class="link header-link" href="#">Контакти</a></li>
+          </ul>
+        </nav>
 
-      <ul class="list">
-        <li class="nav-contact">
-          <a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-        </li>
-        <li class="nav-contact"><a class="link" href="tel:+380961111111">+38 096 111 11 11</a></li>
-      </ul>
+        <ul class="list nav-list">
+          <li class="nav-contact">
+            <a class="link header-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          </li>
+          <li class="nav-contact">
+            <a class="link header-link" href="tel:+380961111111">+38 096 111 11 11</a>
+          </li>
+        </ul>
       </div>
     </header>
     <main>
-      <section>
+      <section class="section">
         <div class="container">
-        <h1 hidden>Партфоліо</h1>
-        <!--(список) фільтр робот-->
-        <ul class="list">
-          <li>
-            <button class="partfolio-btn" type="button">Усі</button>
-          </li>
-          <li>
-            <button class="partfolio-btn" type="button">Веб-сайти</button>
-          </li>
-          <li>
-            <button class="partfolio-btn" type="button">Додатки</button>
-          </li>
-          <li>
-            <button class="partfolio-btn" type="button">Дизайн</button>
-          </li>
-          <li>
-            <button class="partfolio-btn" type="button">Маркетинг</button>
-          </li>
-        </ul>
-        <!--набор карточек-->
-        <ul class="list">
-          <li class="partfolio-work">
-            <img class="partfolio-work-img" src="./images/work-1.jpg" alt="Веб-сайт" width="370" />
-            <h2 class="partfolio-work-item">Технокряк</h2>
-            <p class="partfolio-work-text">Веб-сайт</p>
-          </li>
-          <li class="partfolio-work">
-            <img class="partfolio-work-img" src="./images/work-2.jpg" alt="Дизайн" width="370" />
-            <h2 class="partfolio-work-item">
-              Постер <span lang="en">New Orlean vs Golden Star</span>
-            </h2>
-            <p class="partfolio-work-text">Дизайн</p>
-          </li>
-          <li class="partfolio-work">
-            <img class="partfolio-work-img" src="./images/work-3.jpg" alt="Додаток" width="370" />
-            <h2 class="partfolio-work-item">Ресторан <span lang="en">Seafood</span></h2>
-            <p class="partfolio-work-text">Додаток</p>
-          </li>
-          <li class="partfolio-work">
-            <img class="partfolio-work-img" src="./images/work-4.jpg" alt="Маркетинг" width="370" />
-            <h2 class="partfolio-work-item">Проєкт <span lang="en">Prime</span></h2>
-            <p class="partfolio-work-text">Маркетинг</p>
-          </li>
-          <li class="partfolio-work">
-            <img class="partfolio-work-img" src="./images/work-5.jpg" alt="Додаток" width="370" />
-            <h2 class="partfolio-work-item">Проєкт <span lang="en">Boxes</span></h2>
-            <p class="partfolio-work-text">Додаток</p>
-          </li>
-          <li class="partfolio-work">
-            <img class="partfolio-work-img" src="./images/work-6.jpg" alt="Веб-сайт" width="370" />
-            <h2 class="partfolio-work-item" lang="en">Inspiration has no Borders</h2>
-            <p class="partfolio-work-text">Веб-сайт</p>
-          </li>
-          <li class="partfolio-work">
-            <img class="partfolio-work-img" src="./images/work-7.jpg" alt="Дизайн" width="370" />
-            <h2 class="partfolio-work-item">Видання <span lang="en">Limited Edition</span></h2>
-            <p class="partfolio-work-text">Дизайн</p>
-          </li>
-          <li class="partfolio-work">
-            <img class="partfolio-work-img" src="./images/work-8.jpg" alt="Маркетинг" width="370" />
-            <h2 class="partfolio-work-item">Проєкт <span lang="en">LAB</span></h2>
-            <p class="partfolio-work-text">Маркетинг</p>
-          </li>
-          <li class="partfolio-work">
-            <img class="partfolio-work-img" src="./images/work-9.jpg" alt="" width="370" />
-            <h2 class="partfolio-work-item" lang="en">Growing Business</h2>
-            <p class="partfolio-work-text">Додаток</p>
-          </li>
-        </ul>
+          <h1 class="visually-hidden">Партфоліо</h1>
+          <!--(список) фільтр робот-->
+          <ul class="list partfolio-filtr">
+            <li class="partfolio-filtr-item">
+              <button class="partfolio-btn" type="button">Усі</button>
+            </li>
+            <li class="partfolio-filtr-item">
+              <button class="partfolio-btn" type="button">Веб-сайти</button>
+            </li>
+            <li class="partfolio-filtr-item">
+              <button class="partfolio-btn" type="button">Додатки</button>
+            </li>
+            <li class="partfolio-filtr-item">
+              <button class="partfolio-btn" type="button">Дизайн</button>
+            </li>
+            <li class="partfolio-filtr-item">
+              <button class="partfolio-btn" type="button">Маркетинг</button>
+            </li>
+          </ul>
+          <!--набор карточек-->
+          <ul class="list partfolio-card-list">
+            <li class="partfolio-work">
+              <img
+                class="partfolio-work-img"
+                src="./images/work-1.jpg"
+                alt="Веб-сайт"
+                width="370"
+              />
+              <div class="partfolio-box">
+                <h2 class="partfolio-work-item">Технокряк</h2>
+                <p class="partfolio-work-text">Веб-сайт</p>
+              </div>
+            </li>
+            <li class="partfolio-work">
+              <img class="partfolio-work-img" src="./images/work-2.jpg" alt="Дизайн" width="370" />
+              <div class="partfolio-box">
+                <h2 class="partfolio-work-item">
+                  Постер <span lang="en">New Orlean vs Golden Star</span>
+                </h2>
+                <p class="partfolio-work-text">Дизайн</p>
+              </div>
+            </li>
+            <li class="partfolio-work">
+              <img class="partfolio-work-img" src="./images/work-3.jpg" alt="Додаток" width="370" />
+              <div class="partfolio-box">
+                <h2 class="partfolio-work-item">Ресторан <span lang="en">Seafood</span></h2>
+                <p class="partfolio-work-text">Додаток</p>
+              </div>
+            </li>
+            <li class="partfolio-work">
+              <img
+                class="partfolio-work-img"
+                src="./images/work-4.jpg"
+                alt="Маркетинг"
+                width="370"
+              />
+              <div class="partfolio-box">
+                <h2 class="partfolio-work-item">Проєкт <span lang="en">Prime</span></h2>
+                <p class="partfolio-work-text">Маркетинг</p>
+              </div>
+            </li>
+            <li class="partfolio-work">
+              <img class="partfolio-work-img" src="./images/work-5.jpg" alt="Додаток" width="370" />
+              <div class="partfolio-box">
+                <h2 class="partfolio-work-item">Проєкт <span lang="en">Boxes</span></h2>
+                <p class="partfolio-work-text">Додаток</p>
+              </div>
+            </li>
+            <li class="partfolio-work">
+              <img
+                class="partfolio-work-img"
+                src="./images/work-6.jpg"
+                alt="Веб-сайт"
+                width="370"
+              />
+              <div class="partfolio-box">
+                <h2 class="partfolio-work-item" lang="en">Inspiration has no Borders</h2>
+                <p class="partfolio-work-text">Веб-сайт</p>
+              </div>
+            </li>
+            <li class="partfolio-work">
+              <img class="partfolio-work-img" src="./images/work-7.jpg" alt="Дизайн" width="370" />
+              <div class="partfolio-box">
+                <h2 class="partfolio-work-item">Видання <span lang="en">Limited Edition</span></h2>
+                <p class="partfolio-work-text">Дизайн</p>
+              </div>
+            </li>
+            <li class="partfolio-work">
+              <img
+                class="partfolio-work-img"
+                src="./images/work-8.jpg"
+                alt="Маркетинг"
+                width="370"
+              />
+              <div class="partfolio-box">
+                <h2 class="partfolio-work-item">Проєкт <span lang="en">LAB</span></h2>
+                <p class="partfolio-work-text">Маркетинг</p>
+              </div>
+            </li>
+            <li class="partfolio-work">
+              <img class="partfolio-work-img" src="./images/work-9.jpg" alt="" width="370" />
+              <div class="partfolio-box">
+                <h2 class="partfolio-work-item" lang="en">Growing Business</h2>
+                <p class="partfolio-work-text">Додаток</p>
+              </div>
+            </li>
+          </ul>
         </div>
       </section>
     </main>
@@ -123,21 +167,21 @@
     <!--Footer (подвал)-->
     <footer class="footer">
       <div class="container">
-      <a class="logo" href="./index.html" lang="en"
-        ><span class="logo-part">Web</span><span class="footer-logo-part">Studio</span></a
-      >
+        <a class="logo footer-logo" href="./index.html" lang="en"
+          ><span class="logo-part">Web</span><span class="footer-logo-part">Studio</span></a
+        >
 
-      <address class="footer-contact">
-        <p class="footer-text">м. Київ, пр-т Лесі Українки, 26</p>
-        <ul class="list">
-          <li class="footer-item">
-            <a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-          </li>
-          <li class="footer-item">
-            <a class="link" href="tel:+380961111111">+38 096 111 11 11</a>
-          </li>
-        </ul>
-      </address>
+        <address class="footer-contact">
+          <p class="footer-text">м. Київ, пр-т Лесі Українки, 26</p>
+          <ul class="list">
+            <li class="footer-item">
+              <a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+            <li class="footer-item">
+              <a class="link" href="tel:+380961111111">+38 096 111 11 11</a>
+            </li>
+          </ul>
+        </address>
       </div>
     </footer>
   </body>
