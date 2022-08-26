@@ -227,7 +227,7 @@ img {
 }
 
 .outer-item {
- flex-basis: calc((100%-var(--indent) * (var(--items)-1)) / var(--items));
+  flex-basis: calc((100%-var(--indent) * (var(--items)-1)) / var(--items));
 }
 
 /*Команда*/
@@ -252,7 +252,7 @@ img {
 
 .team-item {
   background-color: var(--second-txt-cl);
-   flex-basis: calc((100%-var(--indent) * (var(--items)-1)) / var(--items));
+  flex-basis: calc((100%-var(--indent) * (var(--items)-1)) / var(--items));
 }
 
 /*.team-img {
